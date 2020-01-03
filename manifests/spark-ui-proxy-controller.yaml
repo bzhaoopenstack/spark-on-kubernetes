@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spark-ui-proxy
-          image: bzhao-spark-cluster/spark-ui-proxy:latest
+          image: bzhao-spark-cluster/spark-ui-proxy:1.0.0
           ports:
             - containerPort: 80
           resources:

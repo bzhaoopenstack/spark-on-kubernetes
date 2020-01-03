@@ -12,7 +12,7 @@ SPARK_TAG = 3.0.0-SNAPSHOT
 #ZEPPELIN_TAG = 0.7.1
 ZEPPELIN_TAG = 0.9.0-SNAPSHOT
 
-SPARK_UI_PROXY_TAG = latest
+SPARK_UI_PROXY_TAG = 1.0.0
 
 #DOCKER_REGISTRY = sz-pg-oam-docker-hub-001.tendcloud.com/library
 DOCKER_REGISTRY = bzhao-spark-cluster
