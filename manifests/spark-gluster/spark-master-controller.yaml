@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: sz-pg-oam-docker-hub-001.tendcloud.com/library/spark:1.5.2_v1
+          image: bzhao-spark-cluster/spark:3.0.0-SNAPSHOT
           command: ["/start-master"]
           ports:
             - containerPort: 7077

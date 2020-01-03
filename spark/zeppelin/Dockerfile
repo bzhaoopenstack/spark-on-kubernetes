@@ -12,17 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM index.tenxcloud.com/jimmy/spark:1.5.2_v1
+#FROM index.tenxcloud.com/jimmy/spark:1.5.2_v1
+FROM bzhao-spark-cluster/spark:3.0.0-SNAPSHOT
 
-ENV ZEPPELIN_VER  0.7.1
+#ENV ZEPPELIN_VER 0.7.1
+ENV ZEPPELIN_VER 0.9.0-SNAPSHOT
+
+ADD ./zeppelin0.9.0/target/zeppelin-${ZEPPELIN_VER}.tar.gz /opt/
+
+RUN cd /opt \
+    && ln -s zeppelin-${ZEPPELIN_VER} zeppelin \
+    && echo Zeppelin ${ZEPPELIN_VER} installed in /opt
 
 # Use bit apache mirror
-RUN mkdir -p /opt && \
-    cd /opt && \
-    curl http://mirror.bit.edu.cn/apache/zeppelin/zeppelin-${ZEPPELIN_VER}/zeppelin-${ZEPPELIN_VER}-bin-all.tgz | \
-        tar -zx && \
-    ln -s zeppelin-${ZEPPELIN_VER}-bin-all zeppelin && \
-    echo Zeppelin ${ZEPPELIN_VER} installed in /opt
+#RUN mkdir -p /opt && \
+#    cd /opt && \
+#    curl http://mirror.bit.edu.cn/apache/zeppelin/zeppelin-${ZEPPELIN_VER}/zeppelin-${ZEPPELIN_VER}-bin-all.tgz | \
+#        tar -zx && \
+#    ln -s zeppelin-${ZEPPELIN_VER}-bin-all zeppelin && \
+#    echo Zeppelin ${ZEPPELIN_VER} installed in /opt
 
 ADD zeppelin-log4j.properties /opt/zeppelin/conf/log4j.properties
 ADD zeppelin-env.sh /opt/zeppelin/conf/zeppelin-env.sh

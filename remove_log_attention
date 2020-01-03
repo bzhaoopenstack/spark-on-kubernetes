@@ -1,0 +1,17 @@
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/spark-3.0.0-SNAPSHOT-bin-2.7.4.tgz
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/spark-3.0.0-SNAPSHOT-bin-2.7.4.tgz
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/hadoop2.7.4-dist/hadoop-dist/
+pom.xml  target/
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/hadoop2.7.4-dist/
+root@ubuntu:~/spark-docker/spark-on-kubernetes# ls spark/zeppelin/
+Dockerfile  docker-zeppelin.sh  zeppelin-0.7.1-bin-all  zeppelin-0.7.1-bin-all.tgz  zeppelin-env.sh  zeppelin-log4j.properties  zeppelin0.9.0
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/zeppelin/zeppelin-0.7.1-bin-all.tgz
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/zeppelin/zeppelin-0.7.1-bin-all
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/zeppelin/
+.gitignore                 Dockerfile                 docker-zeppelin.sh         zeppelin-env.sh            zeppelin-log4j.properties  zeppelin0.9.0/
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/zeppelin/zeppelin0.9.0/target/
+.plxarc                         classes/                        zeppelin-0.9.0-SNAPSHOT/
+archive-tmp/                    maven-shared-archive-resources/ zeppelin-0.9.0-SNAPSHOT.tar.gz
+root@ubuntu:~/spark-docker/spark-on-kubernetes# rm -rf spark/zeppelin/zeppelin0.9.0/
+root@ubuntu:~/spark-docker/spark-on-kubernetes#
+
